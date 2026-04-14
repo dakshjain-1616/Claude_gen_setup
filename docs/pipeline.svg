@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" width="800" height="270">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#131b2e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="270" rx="16" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="400" y="27" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="11" font-weight="600" fill="#475569" letter-spacing="2.5">HOW CLAUDEGEN WORKS</text>
+
+  <!-- ══ PHASE 1 — Ingestion (x=16) ════════════════════════════════ -->
+  <rect x="16" y="42" width="165" height="160" rx="10" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="98" cy="70" r="17" fill="#4f46e5"/>
+  <text x="98" y="76" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1</text>
+  <text x="98" y="100" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#f1f5f9">Ingestion</text>
+  <line x1="36" y1="110" x2="161" y2="110" stroke="#334155" stroke-width="0.8"/>
+  <text x="98" y="127" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Walk source files</text>
+  <text x="98" y="143" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Parse manifests</text>
+  <text x="98" y="159" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Detect frameworks</text>
+  <text x="98" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Respect .gitignore</text>
+  <text x="98" y="194" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#818cf8" font-style="italic">RepoIngester</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="182" y1="122" x2="213" y2="122" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ PHASE 2 — Graph (x=216) ═══════════════════════════════════ -->
+  <rect x="216" y="42" width="165" height="160" rx="10" fill="#1e293b" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="298" cy="70" r="17" fill="#6d28d9"/>
+  <text x="298" y="76" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">2</text>
+  <text x="298" y="100" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#f1f5f9">Graph</text>
+  <line x1="236" y1="110" x2="361" y2="110" stroke="#334155" stroke-width="0.8"/>
+  <text x="298" y="127" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">tree-sitter AST</text>
+  <text x="298" y="143" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Resolve imports</text>
+  <text x="298" y="159" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Detect cycles</text>
+  <text x="298" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Rank by in-degree</text>
+  <text x="298" y="194" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#a78bfa" font-style="italic">DependencyGraph</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="382" y1="122" x2="413" y2="122" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ PHASE 3 — Voice, optional dashed (x=416) ══════════════════ -->
+  <rect x="416" y="42" width="165" height="160" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="1.5" stroke-dasharray="7,3"/>
+  <circle cx="498" cy="70" r="17" fill="#0e7490"/>
+  <text x="498" y="76" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">3</text>
+  <text x="498" y="100" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#f1f5f9">Voice</text>
+  <text x="498" y="112" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#22d3ee">optional</text>
+  <line x1="436" y1="121" x2="561" y2="121" stroke="#334155" stroke-width="0.8"/>
+  <text x="498" y="137" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">WAV / MP3 input</text>
+  <text x="498" y="153" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">faster-whisper</text>
+  <text x="498" y="169" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Runs 100% local</text>
+  <text x="498" y="185" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">No API required</text>
+  <text x="498" y="194" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#67e8f9" font-style="italic">VoiceTranscriber</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="582" y1="122" x2="613" y2="122" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ PHASE 4 — Synthesis (x=616) ═══════════════════════════════ -->
+  <rect x="616" y="42" width="165" height="160" rx="10" fill="#1e293b" stroke="#059669" stroke-width="1.5"/>
+  <circle cx="698" cy="70" r="17" fill="#047857"/>
+  <text x="698" y="76" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">4</text>
+  <text x="698" y="100" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#f1f5f9">Synthesis</text>
+  <line x1="636" y1="110" x2="761" y2="110" stroke="#334155" stroke-width="0.8"/>
+  <text x="698" y="127" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Assemble context</text>
+  <text x="698" y="143" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Template fallback</text>
+  <text x="698" y="159" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">LLM via OpenRouter</text>
+  <text x="698" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#94a3b8">Token budget cap</text>
+  <text x="698" y="194" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#34d399" font-style="italic">ClaudeSynthesizer</text>
+
+  <!-- Footer caption -->
+  <text x="400" y="252" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#475569">
+    Phases 1–2 always run · Phase 3 requires --voice-notes · Phase 4 calls LLM when an API key is present, otherwise uses template
+  </text>
+</svg>

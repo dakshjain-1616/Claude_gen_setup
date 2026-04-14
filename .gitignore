@@ -1,0 +1,47 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ── IDEs / editors ────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# ── ClaudeGen output ─────────────────────────────────────────────────────────
+# These files are generated when claudegen is run — don't commit them
+CLAUDE.md
+.claude/dependency-graph.html
+.claude/dependency-graph.json
+.claude/voice-notes.txt
+
+# ── Whisper model cache ───────────────────────────────────────────────────────
+# faster-whisper downloads models here on first run
+~/.cache/huggingface/

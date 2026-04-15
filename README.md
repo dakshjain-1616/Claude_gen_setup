@@ -107,7 +107,7 @@ claudegen ui
 claudegen ui --host 0.0.0.0 --port 8080
 ```
 
-Open http://localhost:7860 in your browser.
+Open http://localhost:8080 in your browser.
 
 ## CLI Reference
 
@@ -134,7 +134,7 @@ Open http://localhost:7860 in your browser.
 | Option | Default | Description |
 |--------|---------|-------------|
 | `--host` | `127.0.0.1` | Host to bind to |
-| `--port` | `7860` | Port to listen on |
+| `--port` | `8080` | Port to listen on |
 
 ## What Gets Generated
 

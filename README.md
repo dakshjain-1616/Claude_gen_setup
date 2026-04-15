@@ -8,9 +8,9 @@ ClaudeGen scans your codebase, builds a dependency graph, and optionally transcr
 
 <div align="center">
 
-**Built entirely by [NEO](https://heyneo.com) — Your fully autonomous AI Agent**
+**Built entirely by [NEO](https://heyneo.com) — Your fully autonomous AI Engineering Agent**
 
-[![Built with NEO](https://img.shields.io/badge/Built_with-NEO_AI_Agent-5865F2?style=for-the-badge&logo=robotframework&logoColor=white)](https://heyneo.com)&nbsp;&nbsp;[![NEO for VS Code](https://img.shields.io/visual-studio-marketplace/v/NeoResearchInc.heyneo?style=for-the-badge&label=NEO+for+VS+Code&logo=visualstudiocode&logoColor=white&color=007ACC)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo)
+[![NEO for VS Code](https://img.shields.io/badge/VS%20Code-Install%20Extension-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo)
 
 </div>
 
